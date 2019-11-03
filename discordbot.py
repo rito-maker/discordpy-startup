@@ -29,7 +29,8 @@ async def on_message(message):
     if message.content == 'neko':
         await message.channel.send('にゃーん')
 
-    
-    
+@bot.event
+async def discord.on_voice_state_update(member, before, after):
+    await message.channel.send(member)
     
 bot.run(token)
